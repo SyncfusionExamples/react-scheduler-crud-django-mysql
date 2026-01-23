@@ -25,14 +25,14 @@ Syncfusion [React Scheduler](https://ej2.syncfusion.com/react/demos/#/material3/
 4. Need to configure your database in the `backend/scheduler/settings.py` file
    ```
    DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'Your database',
-        'USER': 'Your username',
-        'PASSWORD': 'Your password',
-        'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
-        'PORT': '3306',
-    }
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'Your database',
+            'USER': 'Your username',
+            'PASSWORD': 'Your password',
+            'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
+            'PORT': '3306',
+        }
     }
     ```
 5. We need to create table in the mysql database. Run the following command to create the table
@@ -48,7 +48,7 @@ Syncfusion [React Scheduler](https://ej2.syncfusion.com/react/demos/#/material3/
     ```
     python manage.py runserver
     ```
-    you will the server is running at http://127.0.0.1:8000/
+    you will see the server is running at http://127.0.0.1:8000/
 
 7. Now open another terminal, on the root directory, run the following command to install the required packages
     ```
@@ -61,3 +61,14 @@ Syncfusion [React Scheduler](https://ej2.syncfusion.com/react/demos/#/material3/
     you will see the react server is running at http://localhost:3000/
 
 9. Now you can see the scheduler application running in the browser, and you can able to perform crud operations in the scheduler.
+
+## Output Preview
+![Frontend Preview](./Outputs/Frontend.png)
+*Image illustrating the Syncfusion React Scheduler*
+
+![Database Preview](./Outputs/Database.png)
+*Image illustrating the events of Syncfusion React Scheduler in MYSQL*
+
+## Troubleshooting
+- **401 Unauthorized**: Check `NAME` `User` and `Password`.
+- **CORS errors**: Ensure frontend calls runs on `localhost:3000`

@@ -8,7 +8,7 @@ function App() {
   let dataManager: DataManager = new DataManager({
     url: 'http://127.0.0.1:8000/Home/GetData',
     crudUrl: 'http://127.0.0.1:8000/Home/UpdateData/',
-    adaptor: new UrlAdaptor,
+    adaptor: new UrlAdaptor(),
     crossDomain: true
   });
 
