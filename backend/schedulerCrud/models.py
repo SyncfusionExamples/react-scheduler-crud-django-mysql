@@ -1,8 +1,5 @@
 from django.db import models
 
-# Create your models here.
-from django.db import models
-
 class ScheduleEvents(models.Model):
     Id = models.IntegerField(primary_key=True)
     Subject = models.CharField(max_length=200, null=True, blank=True)

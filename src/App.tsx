@@ -7,13 +7,13 @@ function App() {
   
   let dataManager: DataManager = new DataManager({
     url: 'http://127.0.0.1:8000/Home/GetData',
-    crudUrl: 'http://127.0.0.1:8000/Home/UpdateData/',
+    crudUrl: 'http://127.0.0.1:8000/Home/UpdateData',
     adaptor: new UrlAdaptor(),
     crossDomain: true
   });
 
   return (
-    <ScheduleComponent eventSettings={{ dataSource: dataManager }}>
+    <ScheduleComponent eventSettings={{ dataSource: dataManager }} height="650px">
       <Inject services={[Day, Week, WorkWeek, Month, Agenda, DragAndDrop, Resize]}/>
     </ScheduleComponent>
   );

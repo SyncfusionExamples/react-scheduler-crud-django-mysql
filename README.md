@@ -71,4 +71,4 @@ Syncfusion [React Scheduler](https://ej2.syncfusion.com/react/demos/#/material3/
 
 ## Troubleshooting
 - **401 Unauthorized**: Check `NAME` `User` and `Password`.
-- **CORS errors**: Ensure frontend calls runs on `localhost:3000`
+- **CORS errors**: Ensure the backend’s CORS configuration explicitly allows the frontend origin (e.g., http://localhost:3000).
